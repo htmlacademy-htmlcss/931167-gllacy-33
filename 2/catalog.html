@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/931167-gllacy-33/2/">
 </head>
   <body>
@@ -45,31 +45,24 @@
     </header>
 
     <main class="main-inner">
-      <header class="inner-header">
-        <h2 class="visually-hidden">Каталог</h2>
-        <ul class="bunch-items">
-          <li class="index-item">
-            <a href="index.html" class="index-link">Главная</a>
-          </li>
-          <li class="catalog-item">
-            <a href="catalog.html" class="catalog-link">Каталог</a>
-          </li>
-          <li class="catalog-item">
-            <a href="#" class="butter-link">Сливочное</a>
-          </li>
+      <h1 class="visually-hidden">Виды мороженого</h1>
+      <nav class="inner-header">
+        <ul class="bunch-list">
+          <li class="index-item"><a href="index.html" class="index-link">Главная</a></li>
+          <li class="catalog-item"><a href="catalog.html" class="catalog-link">Каталог</a></li>
+          <li class="catalog-item"><span class="current-page">Сливочное</span></li>
         </ul>
-
-      </header>
+      </nav>
     </main>
 
 <!-- Сортировка -->
-    <section class="catalog-list">
+    <section class="catalog">
       <h2 class="catalog-name">Сливочное мороженое</h2>
       <form class="catalog-filter" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset class="catalog-filter-sort">
-          <legend class="sort-list">Сортировка</legend>
+          <legend class="sort">Сортировка</legend>
           <label class="sort-container">
-            <select class="sort-item">
+            <select class="sort">
               <option value="0">По популярности</option>
               <option value="1">Подешевле</option>
               <option value="2">Подороже</option>
@@ -85,7 +78,7 @@
             <span> – </span>
             <span class="hight-price">500 ₽</span>
           </legend>
-          <label class="price-range-list">
+          <label class="price-range-line">
             <input type="range" min="0" max="2000" value="350" class="price-slider">
           </label>
         </fieldset>
@@ -93,26 +86,26 @@
 
         <fieldset class="catalog-filter-fat">
           <legend class="catalog-filter-fat-name">Жирность</legend>
-            <ul class="fat-radio">
-              <li class="fat-radio-list">
+            <ul class="fat-radio-list">
+              <li class="fat-radio-item">
                 <label class="fat-radio-point">
                   <input class="fat-radio-input" type="radio" name="fat-point" value="fat-radio-zero">
                   0%
                 </label>
               </li>
-              <li class="fat-radio-list">
+              <li class="fat-radio-item">
                 <label class="fat-radio-point">
                   <input class="fat-radio-input" type="radio" name="fat-point" value="fat-radio-ten">
                   до 10%
                 </label>
               </li>
-              <li class="fat-radio-list">
+              <li class="fat-radio-item">
                 <label class="fat-radio-point">
                   <input class="fat-radio-input" type="radio" name="fat-point" value="fat-radio-thirty">
                   до 30%
                 </label>
               </li>
-              <li class="fat-radio-list">
+              <li class="fat-radio-item">
                 <label class="fat-radio-point">
                   <input class="fat-radio-input" type="radio" name="fat-point" value="fat-radio-above-thirty">
                   выше 30%
@@ -124,33 +117,33 @@
 <!-- НАЧИНКА -->
         <fieldset class="catalog-filter-topping">
           <legend class="catalog-filter-topping-name">Наполнители:</legend>
-            <ul class="topping-checkbox">
-              <li class="topping-checkbox-list">
-                <label class="topping-checkbox-item">
+            <ul class="topping-checkbox-list">
+              <li class="topping-checkbox-item">
+                <label class="topping-checkbox">
                   <input class="topping-checkbox-input" type="checkbox" name="topping-chocolate">
                   шоколадные
                 </label>
               </li>
-              <li class="topping-checkbox-list">
-                <label class="topping-checkbox-item">
+              <li class="topping-checkbox-item">
+                <label class="topping-checkbox">
                   <input class="topping-checkbox-input" type="checkbox" name="topping-sugar">
                   сахарные посыпки
                 </label>
               </li>
-              <li class="topping-checkbox-list">
-                <label class="topping-checkbox-item">
+              <li class="topping-checkbox-item">
+                <label class="topping-checkbox">
                   <input class="topping-checkbox-input" type="checkbox" name="topping-fruit">
                   фрукты
                 </label>
               </li>
-              <li class="topping-checkbox-list">
-                <label class="topping-checkbox-item">
+              <li class="topping-checkbox-item">
+                <label class="topping-checkbox">
                   <input class="topping-checkbox-input" type="checkbox" name="topping-syrop">
                   сиропы
                 </label>
               </li>
-              <li class="topping-checkbox-list">
-                <label class="topping-checkbox-item">
+              <li class="topping-checkbox-item">
+                <label class="topping-checkbox">
                   <input class="topping-checkbox-input" type="checkbox" name="topping-jam">
                   джемы
                 </label>
@@ -162,33 +155,34 @@
     </section>
 
     <!-- ТОВАР -->
-    <section class="product">
+    <section class="products">
+      <h2 class="visually-hidden">Популярное мороженное</h2>
       <p class="product-title">Попробуйте самые популярные вкусы нашего мороженого</p>
       <ul class="product-list">
           <li class="product-item">
               <img class="product-img raspberry" src="" alt="Мороженое Малинка">
-              <span class="product-name">Малинка</span>
+              <h3 class="product-name">Малинка</h3>
               <p class="product-description">Сливочное мороженое с малиновым джемом</p>
               <span class="product-price">310 ₽/кг</span>
               <button type="button" class="button"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
           <li class="product-item">
               <img class="product-img pistachio" src="" alt="Мороженое Малинка">
-              <span class="product-name">Фисташка</span>
+              <h3 class="product-name">Фисташка</h3>
               <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
               <span class="product-price">340 ₽/кг</span>
               <button type="button" class="button"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
           <li class="product-item">
               <img class="product-img blueberry" src="" alt="Мороженое Малинка">
-              <span class="product-name">Черника</span>
+              <h3 class="product-name">Черника</h3>
               <p class="product-description">Крем-брюле с черничным джемом</p>
               <span class="product-price">330 ₽/кг</span>
               <button type="button" class="button"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
           <li class="product-item">
               <img class="product-img gum" src="" alt="Мороженое Малинка">
-              <span class="product-name">Бабл-гам</span>
+              <h3 class="product-name">Бабл-гам</h3>
               <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
               <span class="product-price">320 ₽/кг</span>
               <button type="button" class="button"><span class="visually-hidden">Добавить в корзину</span></button>
@@ -197,7 +191,9 @@
   </section>
 
   <section class="page-search">
-      <ul class="pagination">
+    <h3 class="visually-hidden">Навигация по страницам</h3>
+    <button class="button pagination-show-more" type="button">Показать ещё</button>
+      <ul class="pagination-list">
         <li class="pagination-item">
           <a href="" class="pagination-link pagination-prev pagination-disabled">
             <span class="visually-hidden">Предыдущая страница</span>
@@ -209,14 +205,11 @@
         <li class="pagination-item">
           <a href="" class="pagination-link">2</a>
         </li>
-        </li>
         <li class="pagination-item">
           <a href="" class="pagination-link">3</a>
         </li>
-        </li>
         <li class="pagination-item">
           <a href="" class="pagination-link">4</a>
-        </li>
         </li>
         <li class="pagination-item">
           <a href="" class="pagination-link">5</a>
@@ -226,10 +219,7 @@
             <span class="visually-hidden">Следующая страница</span>
           </a>
         </li>
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
     </ul>
-
-
   </section>
 
 
@@ -238,18 +228,18 @@
 
     <footer>
       <div class="footer gallery-footer">
-          <ul class="social-media">
-              <li class="social-media-vk">
+          <ul class="social-media-list">
+              <li class="social-vk-item">
                   <a class="social-button" href="https://vk.com/htmlacademy">
-                      <span class="visually-hidden">ВК</span>
+                      <span class="visually-hidden">Вконтакте</span>
                   </a>
               </li>
-              <li class="social-media-fb">
+              <li class="social-fb-item">
                   <a class="social-button" href="https://www.facebook.com/htmlacademy">
                       <span class="visually-hidden">Фейсбук</span>
                   </a>
               </li>
-              <li class="social-media-inst">
+              <li class="social-inst-item">
                   <a class="social-button" href="https://www.instagram.com/htmlacademy/">
                       <span class="visually-hidden">Инстаграмм</span>
                   </a>
@@ -257,11 +247,11 @@
           </ul>
       </div>
       <div class="different-info">
-          <ul class="about-us">
+          <ul class="about-us-list">
               <li class="about-us-item about-us-supplier"><img src="#" alt="Сердечко">Для поставщиков</li>
               <li class="about-us-item">О производствое</li>
           </ul>
-          <ul class="about-us">
+          <ul class="about-us-list">
               <li class="about-us-item">Наши документы</li>
               <li class="about-us-item">Экологические стандарты</li>
           </ul>
