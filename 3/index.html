@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a href="index.html" class="main-logo-image"><img src="/images/logo.svg" width="137" height="56" alt="Логотип магазина мороженного Глеси Шоп">
+        <a class="main-logo-image" href="index.html"><img src="/images/logo.svg" width="137" height="56" alt="Логотип магазина мороженного Глеси Шоп">
           <h1 class="visually-hidden">Магазин мороженного Глэси Шоп</h1>
         </a>
         <ul class="navigation-list">
@@ -43,59 +43,79 @@
     </header>
 
 <!-- slider -->
-    <main>
+    <main class="main-index main-container">
         <section class="swiper">
           <h1 class="visually-hidden">Галлерея мороженого</h1>
           <div class="swiper-wrapper">
             <div class="swiper-slider">
+              <div class="swiper-description">
                 <h2 class="ice-cream-name">Нежный пломбир с клубничным джемом</h2>
                 <p class="ice-cream-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-                <div class="background-swiper-1"><img src="/images/ice-cream/ice-cream-1.png" width="306" height="507" class="ice-cream-1" alt="Фото нежного пломбира с клубничным джемом">
+                <button class="button order-button" name="order" value="Заказать" type="button">Заказать</button>
+              </div>
+              <div class="ice-cream-conteiner">
+                <div class="background-swiper-1">
+                  <img src="/images/ice-cream/ice-cream-1.png" width="306" height="507" class="ice-cream-1" alt="Фото нежного пломбира с клубничным джемом">
                 </div>
-                <button class="button orger-button" name="order" value="Заказать" type="button">Заказать</button>
+              </div>
             </div>
+
             <div class="swiper-slider">
-                <h3 class="ice-cream-name visually-hidden">Сливочное мороженое со вкусом банана</h3>
+              <div class="swiper-description">
+                <h2 class="ice-cream-name visually-hidden">Сливочное мороженое со вкусом банана</h2>
                 <p class="ice-cream-description visually-hidden">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-                <div class="background-swiper-2"><img class="ice-cream-2" src="/images/ice-cream/ice-cream-2.png" width="66" height="150" alt="Фото нежного пломбира с клубничным джемом">
+                <button class="button order-button visually-hidden" name="order" value="Заказать" type="button">Заказать</button>
+              </div>
+              <div class="ice-cream-conteiner-2">
+                <div class="background-swiper-2">
+                  <img src="/images/ice-cream/ice-cream-2.png" width="66" height="150" class="ice-cream-1" alt="Фото cливочного мороженого со вкусом банана">
                 </div>
-                <button class="button orger-button" name="order" value="Заказать" type="button">Заказать</button>
+              </div>
             </div>
+
             <div class="swiper-slider">
-                <h3 class="ice-cream-name visually-hidden">Карамельный пломбир c маршмеллоу</h3>
+              <div class="swiper-description">
+                <h2 class="ice-cream-name visually-hidden">Карамельный пломбир c маршмеллоу</h2>
                 <p class="ice-cream-description visually-hidden">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-                <div class="background-swiper-2"><img class="ice-cream-3" src="/images/ice-cream/ice-cream-3.png" width="66" height="150" alt="Фото нежного пломбира с клубничным джемом">
+                <button class="button order-button visually-hidden" name="order" value="Заказать" type="button">Заказать</button>
+              </div>
+              <div class="ice-cream-conteiner-3">
+                <div class="background-swiper-3">
+                  <img src="/images/ice-cream/ice-cream-3.png" width="66" height="150" class="ice-cream-1" alt="Фото карамельного пломбира c маршмеллоу">
                 </div>
-                <button class="button orger-button" name="order" value="Заказать" type="button">Заказать</button>
+              </div>
             </div>
           </div>
 
-          <div class="swiper-pagination">
+          <div class="swiper-footer">
+            <div class="pagination-item">
+              <div class="swiper-pagination">
                 <button class="pagination-button pagination-current-page-1" type="button">
-                    <span class="visually-hidden">1 слайд</span>
+                <span class="visually-hidden">1 слайд</span>
                 </button>
-          </div>
-          <div class="swiper-pagination">
+              </div>
+              <div class="swiper-pagination">
                 <button class="pagination-button pagination-current-page-2" type="button">
-                    <span class="visually-hidden">2 слайд</span>
+                <span class="visually-hidden">2 слайд</span>
                 </button>
-          </div>
-          <div class="swiper-pagination">
+              </div>
+              <div class="swiper-pagination">
                 <button class="pagination-button pagination-current-page-3" type="button">
-                    <span class="visually-hidden">3 слайд</span>
+                <span class="visually-hidden">3 слайд</span>
                 </button>
-          </div>
+              </div>
+            </div>
 
-          <div class="swiper-button-prev">
-            <button type="button" name="button-prev" value="">
+            <div class="swiper-button-prev">
+              <button type="button" name="button-prev" value="">
               <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-          </div>
-          <div class="swiper-button-next">
-            <button type="button" name="button-next" value="">
+              </button>
+            </div>
+            <div class="swiper-button-next">
+              <button type="button" name="button-next" value="">
               <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+              </button>
+            </div>
 
           <div class="gallery-footer">
             <ul class="social-media-list">
@@ -116,10 +136,11 @@
               </li>
             </ul>
           </div>
+        </div>
         </section>
 
 
-<!-- МОРОЖЕННОЕ И ПОДАРОК -->
+<!-- icecream and presents -->
         <section class="special-offer">
           <h2 class="visually-hidden">Подарок за заказ</h2>
             <p class="offer-title">Заказывайте мороженое и получайте подарки!</p>
@@ -130,7 +151,7 @@
                         При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
                     </p>
                     <button class="button" name="gift"  value="Хочу подарок" type="button">Хочу подарок</button>
-                    <img class="jam-gift-1" src="/images/gift/gift-1.png" width="570" height="268" alt="В подарок малиновое варенье">
+                    <img class="ice-cream-gift" src="/images/gift/gift-1.png" width="570" height="268" alt="В подарок малиновое варенье">
                 </li>
                 <li class="marsh-mallow-item">
                     <span class="offer-name">Маршмеллой даром!</span>
@@ -138,14 +159,15 @@
                         При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
                     </p>
                     <button class="button" name="gift" value="Хочу подарок" type="button">Хочу подарок</button>
-                    <img class="jam-gift-2" src="/images/gift/gift-2.png" width="570" height="268" alt="В подарок упаковка зефирок">
+                    <img class="ice-cream-gift" src="/images/gift/gift-2.png" width="570" height="268" alt="В подарок упаковка зефирок">
                 </li>
             </ul>
         </section>
 
-<!-- ТОВАР -->
+<!-- Products -->
         <section class="product">
             <p class="product-title">Попробуйте самые популярные вкусы нашего мороженого</p>
+            <div class="product-list-conteiner">
             <ul class="product-list">
                 <li class="product-item product-background">
                     <a href="#" class="product-card-link">
@@ -192,8 +214,10 @@
                     </a>
                 </li>
               </ul>
+            </div>
         </section>
-<!-- Преимущества -->
+
+<!-- Advanteges -->
         <section class="about-shop">
           <h2 class="visually-hidden">Наши приемущества</h2>
           <div class="about-shop-background">
@@ -224,13 +248,17 @@
           </div>
         </section>
 
-<!-- Блог и форма подписаться -->
+<!-- blog and subscribe form -->
         <section class="newsletter">
           <h2 class="visually-hidden">Наш блог и подписка на рассылку</h2>
             <article class="newsletter-blog">
+              <div class="newsletter-blog-conteiner">
                 <h3 class="newsletter-blog-title">Новое в нашем блоге</h3>
-                <a href="" class="newsletter-blog-link">10 способов сервировки фруктовых щербетов
+                <div class="blog-link-conteiner">
+                  <a href="" class="newsletter-blog-link">10 способов сервировки фруктовых щербетов
                     к столу</a>
+                </div>
+              </div>
             </article>
             <div class="newsletter-background">
             <form class="newsletter-form" method="post" action="">
@@ -244,7 +272,7 @@
             </div>
         </section>
 
-<!-- ДОСТАВКА И ФОРМА ЗАКАЗА -->
+ <!-- Delivery -->
         <section class="delivery">
           <h2 class="visually-hidden">Доставка</h2>
             <div class="delivery-box">
@@ -253,10 +281,11 @@
                     Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
                 </p>
             </div>
+            <div class="delivery-form-conteiner">
             <form class="delivery-form" method="post" action="#">
                 <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
                 <p class="delivery-form-container">
-                <label class="delivery-ladel"for="delivery-date">Дата</label>
+                <label class="delivery-ladel" for="delivery-date">Дата</label>
                     <input class="delivery-text" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2022">
                 </p>
                 <p class="delivery-form-container">
@@ -269,13 +298,14 @@
                 </p>
                 <button type="button" class="button button-pink">Отправить</button>
             </form>
+            </div>
         </section>
 
 
 <!-- Адрес офиса и контакты        -->
         <section class="contacts">
+          <div class="contacts-background">
             <h2 class="contacts-title">Адрес главного офиса и офлайн-магазина:</h2>
-            <div class="contacts-background">
             <address class="contacts-address">
                 <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
                 <p class="contacts-subtitle">Для заказов по телефону:</p>
@@ -288,6 +318,7 @@
     </main>
 
     <footer>
+      <div class="footer-conteiner">
         <div class="footer gallery-footer">
             <ul class="social-media-list">
                 <li class="social-vk-item">
@@ -323,6 +354,7 @@
             </a>
             <p class="brand-sign">Сделано в .html academy © 2021</p>
         </div>
+      </div>
     </footer>
   </body>
 </html>
