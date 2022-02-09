@@ -24,18 +24,18 @@
         </ul>
         <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-                <a href="tel:+780 05558628" class="main-number">+7 800 555-86-28</a>
+                <a href="tel:+780 05558628" class="navigation-link main-number">+7 800 555-86-28</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item search">
                 <a href="#" class="navigation-link">
                     <span class="visually-hidden">Поиск</span>
                 </a>
             </li>
-            <li class="navigation-item">
-                <a href="#" class="navigation-link exit">Вход</a>
+            <li class="navigation-item exit">
+                <a href="#" class="navigation-link">Вход</a>
             </li>
-            <li class="navigation-item">
-                <a href="#" class="navigation-link basket">Пусто</a>
+            <li class="navigation-item basket">
+                <a href="#" class="navigation-link">Пусто</a>
             </li>
         </ul>
       </nav>
@@ -116,7 +116,7 @@
               </button>
             </div>
 
-          <div class="gallery-footer">
+          <div class="gallery-footer social-media-slider">
             <ul class="social-media-list">
               <li class="social-vk-item">
                 <a class="social-button" href="https://vk.com/htmlacademy">
@@ -143,24 +143,28 @@
         <section class="special-offer">
           <h2 class="visually-hidden">Подарок за заказ</h2>
             <p class="offer-title">Заказывайте мороженое и получайте подарки!</p>
+            <div class="offer-conteiner">
             <ul class="special-offer-list">
                 <li class="raspberry-jam-item">
                     <h3 class="offer-name">Малинка даром!</h3>
                     <p class="offer-description">
                         При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
                     </p>
-                    <button class="button" name="gift"  value="Хочу подарок" type="button">Хочу подарок</button>
+                    <button class="button offer-button" name="gift"  value="Хочу подарок" type="button">Хочу подарок</button>
                     <img class="ice-cream-gift" src="/images/gift/gift-1.png" width="570" height="268" alt="В подарок малиновое варенье">
                 </li>
+            </ul>
+            <ul class="special-offer-list">
                 <li class="marsh-mallow-item">
-                    <span class="offer-name">Маршмеллой даром!</span>
+                    <span class="offer-name">Маршмеллоу даром!</span>
                     <p class="offer-description">
                         При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
                     </p>
-                    <button class="button" name="gift" value="Хочу подарок" type="button">Хочу подарок</button>
+                    <button class="button offer-button" name="gift" value="Хочу подарок" type="button">Хочу подарок</button>
                     <img class="ice-cream-gift" src="/images/gift/gift-2.png" width="570" height="268" alt="В подарок упаковка зефирок">
                 </li>
             </ul>
+          </div>
         </section>
 
 <!-- Products -->
@@ -259,15 +263,17 @@
                 </div>
               </div>
             </article>
-            <div class="newsletter-background">
-            <form class="newsletter-form" method="post" action="">
-                <label for="newsletter-email" class="newsletter-text">
-                    Подпишитесь на нашу сладкую рассылку и будьте всегда
-                    в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-                </label>
-                <input class="newsletter-email" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" required>
-                <button class="button button-pink" type="submit" value="Отправить">Отправить</button>
-            </form>
+            <div class="newsletter-background-post">
+              <div class="newsletter-background">
+                <form class="newsletter-form" method="post" action="">
+                    <label for="newsletter-email" class="newsletter-text">
+                        Подпишитесь на нашу сладкую рассылку и будьте всегда
+                        в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                    </label>
+                    <input class="newsletter-email" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" required>
+                    <button class="button button-pink button-email" type="submit" value="Отправить">Отправить</button>
+                </form>
+              </div>
             </div>
         </section>
 
@@ -280,22 +286,24 @@
                     Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
                 </p>
             </div>
-            <div class="delivery-form-conteiner">
+            <div class="delivery-conteiner">
             <form class="delivery-form" method="post" action="#">
                 <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-                <p class="delivery-form-container">
-                <label class="delivery-ladel" for="delivery-date">Дата</label>
-                    <input class="delivery-text" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2022">
-                </p>
-                <p class="delivery-form-container">
-                <label class="delivery-ladel" for="delivery-phone">Телефон</label>
-                    <input class="delivery-text" type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 900-00-00">
-                </p>
-                <p class="delivery-form-container">
-                <label class="delivery-ladel" for="delivery-address">Адрес</label>
-                    <input class="delivery-text" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
-                </p>
-                <button type="button" class="button button-pink">Отправить</button>
+                <div class="delivery-form-container">
+                  <div class="delivery-date-container">
+                  <label class="delivery-ladel label-date" for="delivery-date">Дата</label>
+                      <input class="delivery-date" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2022">
+                  </div>
+                  <div class="delivery-phone-container">
+                  <label class="delivery-ladel" for="delivery-phone">Телефон</label>
+                      <input class="delivery-phone" type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 900-00-00">
+                  </div>
+                  <div class="delivery-address-container">
+                  <label class="delivery-ladel" for="delivery-address">Адрес</label>
+                      <input class="delivery-address" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+                  </div>
+                  <button type="button" class="button button-pink  button-delivery">Отправить</button>
+              </div>
             </form>
             </div>
         </section>
@@ -311,7 +319,7 @@
                 <a href="tel:+78128121212" class="contacts-phone">+7 (812) 812-12-12</a>
                 <h3 class="work-time">(с 10 до 20 ежедневно)</h3>
             </address>
-            <a href="#" class="button button-pink">Форма обратной связи</a>
+            <a href="#" class="button button-pink button-form">Форма обратной связи</a>
           </div>
         </section>
     </main>
@@ -320,17 +328,17 @@
       <div class="footer-conteiner">
         <div class="footer gallery-footer">
             <ul class="social-media-list">
-                <li class="social-vk-item">
+                <li class="social-item vk-social">
                     <a class="social-button" href="https://vk.com/htmlacademy">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </li>
-                <li class="social-fb-item">
+                <li class="social-item fb-social">
                     <a class="social-button" href="https://www.facebook.com/htmlacademy">
                         <span class="visually-hidden">Фейсбук</span>
                     </a>
                 </li>
-                <li class="social-inst-item">
+                <li class="social-item inst-social">
                     <a class="social-button" href="https://www.instagram.com/htmlacademy/">
                         <span class="visually-hidden">Инстаграмм</span>
                     </a>
