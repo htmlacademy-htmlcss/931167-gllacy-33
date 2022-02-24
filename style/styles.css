@@ -107,6 +107,24 @@ body {
   text-align: center;
   padding: 8px 16px;
 }
+
+.navigation-link:hover {
+  background-color: #FFCBD8;
+  border-radius: 26px;
+}
+
+.navigation-link:active {
+  background-color: #FCFCFC;
+  border-radius: 26px;
+}
+
+.navigation-link:focus {
+  background-color: #FFCBD8;
+  border: 2px solid #2D3440;
+  border-radius: 26px;
+}
+
+
 .navigation-link-search {
   background-color: #FFCBD8;
   border-radius: 50% 50%;
@@ -133,10 +151,28 @@ body {
   color:#2D3440;
   line-height: 20px;
   background-color: #FFCBD8;
-  border-radius: 20px;
+  border-radius: 26px;
   padding: 6px 16px 6px 40px;
   min-width: 34px;
   min-height: 20px;
+}
+
+
+.navigation-link-login:hover {
+  background-color: #FFCBD8;
+  opacity: 0.5;
+  border-radius: 26px;
+}
+
+.navigation-link-login:active {
+  background-color: #FCFCFC;
+  border-radius: 26px;
+}
+
+.navigation-link-login:focus {
+  background-color: #FFCBD8;
+  border: 2px solid #2D3440;
+  border-radius: 26px;
 }
 
 
@@ -162,7 +198,7 @@ body {
   background-color: #FFCBD8;
   position: relative;
   padding: 0;
-  border-radius: 20px;
+  border-radius: 26px;
   padding: 6px 16px 6px 40px;
   min-width: 41px;
   min-height: 20px;
@@ -212,12 +248,12 @@ body {
 }
 
 
+
+
 /* slider */
 .swiper {
   margin: 0;
   padding: 0;
-  /* width: 1170px; */
-  /* height: 554px; */
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
@@ -225,13 +261,9 @@ body {
 
 .swiper-wrapper {
   display: flex;
-  /* align-items: center; */
-
 }
 
 .swiper-slider {
-  /* display: flex; */
-  /* align-items: center; */
   padding: 136px 0 0 70px;
   margin-right: 19px;
 }
@@ -1144,7 +1176,7 @@ display: flex;
 .navigation-link-current {
   color: #FCFCFC;
   background-color: #FF4A78;
-  border-radius: 20px;
+  border-radius: 26px;
 }
 
 
