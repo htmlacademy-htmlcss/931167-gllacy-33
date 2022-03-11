@@ -1273,7 +1273,7 @@ address {
   height: 20px;
   background-color: #FCFCFC;
   border: none;
-  background-image: url("/931167-gllacy-33/images/icon/cross.svg");
+  background-image: url("../images/icon/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1458,7 +1458,7 @@ address {
   border: none;
   border-radius: 26px;
   background-color: rgba(252, 252, 252, 0.3);
-  background-image: url("/931167-gllacy-33/images/icon/slider-down.svg");
+  background-image: url("../images/icon/slider-down.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
@@ -1679,7 +1679,7 @@ border-radius: 26px;
   left: 0;
   width: 16px;
   height: 16px;
-  background-image: url(/931167-gllacy-33/images/icon/check-off.svg);
+  background-image: url(../images/icon/check-off.svg);
 }
 
 
