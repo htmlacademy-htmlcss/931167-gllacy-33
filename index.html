@@ -11,7 +11,7 @@
         <a class="main-logo-image" href="index.html"><img src="images/logo.svg" width="137" height="56" alt="Логотип магазина мороженного Глеси Шоп">
           <h1 class="visually-hidden">Магазин мороженного Глэси Шоп</h1>
         </a>
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-list-main">
             <li class="navigation-item">
                 <a href="catalog.html" class="navigation-link navigation-link-item">Каталог</a>
             </li>
@@ -31,6 +31,14 @@
                   <svg class="navigation-icon-search" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.91 7.25a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0Zm9.56 5.16a6.67 6.67 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z" fill="#2D3440"/></svg>
                   <span class="visually-hidden">Поиск</span>
                 </a>
+
+                <div class="popover popover-search">
+                  <h2 class="visually-hidden">Поиск по сайту</h2>
+                  <form class="popover-login-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="popover-search-line" type="email" name="popover-search-line" id="popover-search-line" placeholder="Поиск по сайту" required>
+                  </form>
+                </div>
+
             </li>
             <li class="navigation-item navigation-login">
                 <a href="#" class="navigation-link navigation-link-login">Вход
@@ -41,11 +49,15 @@
                 <h2 class="popover-login-title">Личный кабинет</h2>
                 <form class="popover-login-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="popover-conteiner">
-                  <input class="popover-email" type="email" name="email" id="popover-email" placeholder="email@example.com" required>
-                  <input class="popover-password" type="password" name="password" id="popover-password" placeholder="Пароль" required>
+                  <input class="popover-email point-form" type="email" name="email" id="popover-email" placeholder="email@example.com" required>
+                  <input class="popover-password point-form" type="password" name="password" id="popover-password" placeholder="Пароль" required>
                 </div>
                 </form>
-                <button class="button button-pink button-popover" type="submit" value="Отправить">Отправить</button>
+                <div class="popover-button-container">
+                  <button class="button button-pink button-popover" type="submit" value="Отправить">Войти</button>
+                  <a class="popover-button-link" href="https://htmlacademy.ru/">Забыли пароль?</a>
+                  <a class="popover-button-link" href="https://htmlacademy.ru/">Регистрация</a>
+                </div>
               </div>
 
             </li>
@@ -70,11 +82,9 @@
           <h2 class="visually-hidden">Галлерея мороженного</h2>
           <div class="swiper-wrapper">
             <div class="swiper-slider">
-              <div class="swiper-description">
                 <h2 class="ice-cream-name">Нежный пломбир с клубничным джемом</h2>
                 <p class="ice-cream-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
                 <button class="button swiper-button" name="order" value="Заказать" type="button">Заказать</button>
-              </div>
             </div>
 
             <div class="ice-cream-conteiner">
@@ -301,7 +311,7 @@ First little ice cream -->
                         в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                     </label>
                     <div class="newsletter-conteiner">
-                      <input class="newsletter-email" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" required>
+                      <input class="newsletter-email point-form" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" optional>
                       <button class="button button-pink button-email" type="submit" value="Отправить">Отправить</button>
                   </div>
                 </form>
@@ -324,16 +334,32 @@ First little ice cream -->
                 <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
                 <div class="delivery-form-container">
                   <div class="delivery-date-container">
-                    <label class="delivery-ladel label-date" for="delivery-date">Дата</label>
-                    <input class="delivery-date" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2022">
+                    <span class="form-lable">
+                      <label class="delivery-label label-date" for="delivery-date">Дата</label>
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                          <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 7 1.33ZM0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V7c0-.37.3-.67.67-.67ZM7 3.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" fill="#2D3440"/></svg>
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label">Тултип</span>
+                      </span>
+                    </span>
+                    <input class="delivery-date point-form" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2022">
                   </div>
                   <div class="delivery-phone-container">
-                    <label class="delivery-ladel" for="delivery-phone">Телефон</label>
-                    <input class="delivery-phone" type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 900-00-00">
+                    <label class="delivery-label" for="delivery-phone">Телефон</label>
+                    <input class="delivery-phone point-form" type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 900-00-00">
                   </div>
                   <div class="delivery-address-container">
-                    <label class="delivery-ladel" for="delivery-address">Адрес</label>
-                    <input class="delivery-address" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+                    <span class="form-lable">
+                      <label class="delivery-label" for="delivery-address">Адрес</label>
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                          <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 7 1.33ZM0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V7c0-.37.3-.67.67-.67ZM7 3.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" fill="#2D3440"/></svg>
+                        </button>
+                        <span class="tooltip-address-text" role="tooltip" id="tooltip-label">Введите название<br>улицы, дома и квартиры</span>
+                      </span>
+                    </span>
+                    <input class="delivery-address point-form" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
                   </div>
                 </div>
                 <button type="button" class="button button-pink  button-delivery">Отправить</button>
@@ -417,9 +443,9 @@ First little ice cream -->
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-conteiner">
-              <input class="modal-form" type="name" name="name" id="modal-name" placeholder="Имя и фамилия" required>
-              <input class="modal-form" type="email" name="email" id="modal-email" placeholder="email@example.com" required>
-              <input class="modal-form textarea" type="email" name="textarea" id="modal-textarea" placeholder="В свободной форме" required>
+              <input class="modal-form point-form" type="name" name="name" id="modal-name" placeholder="Имя и фамилия" required>
+              <input class="modal-form point-form" type="email" name="email" id="modal-email" placeholder="email@example.com" required>
+              <textarea class="modal-form point-form" name="textarea" id="modal-textarea" rows="10" cols="" placeholder="В свободной форме" required></textarea>
             </div>
           </form>
           <button class="button button-pink button-modal" type="submit" value="Отправить">Отправить</button>
