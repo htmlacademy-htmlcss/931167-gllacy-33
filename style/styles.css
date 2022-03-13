@@ -821,6 +821,7 @@ body {
 }
 
 .product-description-conteiner {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -858,13 +859,9 @@ body {
   margin-bottom: 0;
 }
 
-.product-card-link {
-  text-align: center;
-  color:#2D3440;
-}
-
 .product-name {
   text-decoration: none;
+  color: #2D3440;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -875,6 +872,7 @@ body {
 
 .product-description {
   text-align: center;
+  text-decoration: none;
   color:#2D3440;
   background-color: #ffffff;
   margin: 0;
@@ -1515,7 +1513,7 @@ address {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 textarea {
