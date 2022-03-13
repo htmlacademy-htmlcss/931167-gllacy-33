@@ -1793,6 +1793,12 @@ textarea {
   border: none;
 }
 
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .catalog-filter-sort {
   width: 196px;
   height: 64px;
