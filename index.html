@@ -24,7 +24,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-                <a href="tel:+780 05558628" class="main-number">+7 800 555-86-28</a>
+                <a href="tel:+78005558628" class="main-number">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item navigation-search">
                 <a href="#" class="navigation-link navigation-link-search">
@@ -292,7 +292,7 @@
                         в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                     </label>
                     <div class="newsletter-conteiner">
-                      <input class="newsletter-email point-form" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" optional>
+                      <input class="newsletter-email point-form" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" required>
                       <button class="button button-pink button-email" type="submit" value="Отправить">Отправить</button>
                   </div>
                 </form>
@@ -318,10 +318,10 @@
                     <span class="form-lable">
                       <label class="delivery-label label-date" for="delivery-date">Дата</label>
                       <span class="tooltip">
-                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                           <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 7 1.33ZM0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V7c0-.37.3-.67.67-.67ZM7 3.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" fill="#2D3440"/></svg>
                         </button>
-                        <span class="tooltip-text" role="tooltip" id="tooltip-label">Тултип</span>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Тултип</span>
                       </span>
                     </span>
                     <input class="delivery-date point-form" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2022">
@@ -334,10 +334,10 @@
                     <span class="form-lable">
                       <label class="delivery-label" for="delivery-address">Адрес</label>
                       <span class="tooltip">
-                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
                           <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 7 1.33ZM0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V7c0-.37.3-.67.67-.67ZM7 3.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" fill="#2D3440"/></svg>
                         </button>
-                        <span class="tooltip-address-text" role="tooltip" id="tooltip-label">Введите название<br>улицы, дома и квартиры</span>
+                        <span class="tooltip-address-text" role="tooltip" id="tooltip-label-address">Введите название<br>улицы, дома и квартиры</span>
                       </span>
                     </span>
                     <input class="delivery-address point-form" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
@@ -388,19 +388,19 @@
             </ul>
         </div>
         <div class="different-info">
+          <img src="../931167-gllacy-33/images/icon/heart.svg" class="about-us-supplier" alt="Сердечко">
             <ul class="about-us-list">
-              <img src="../931167-gllacy-33/images/icon/heart.svg" class="about-us-supplier" alt="Сердечко">
                 <li class="about-us-item about-for-delivers">
-                  <a class="about-us-point" href="" alt="">Для поставщиков</a>
+                  <a class="about-us-point" href="#">Для поставщиков</a>
                 </li>
                 <li class="about-us-item">
-                  <a class="about-us-point" href="" alt="">О производствое</a>
+                  <a class="about-us-point" href="#">О производствое</a>
                 </li>
                 <li class="about-us-item">
-                  <a class="about-us-point" href="" alt="">Наши документы</a>
+                  <a class="about-us-point" href="#">Наши документы</a>
                 </li>
                 <li class="about-us-item">
-                  <a class="about-us-point" href="" alt="">Экологические стандарты</a>
+                  <a class="about-us-point" href="#">Экологические стандарты</a>
                 </li>
             </ul>
         </div>
@@ -408,7 +408,7 @@
             <a class="brand-name" href="https://htmlacademy.ru/">
                 <img src="../931167-gllacy-33/images/icon/logo_htmlacademy.svg" alt="htmlacademy">
             </a>
-            <p class="brand-sign">Сделано в <a class="academy-decoration" href="https://htmlacademy.ru/" alt="htmlacademy">.html academy</a> © 2021</p>
+            <p class="brand-sign">Сделано в <a class="academy-decoration" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
         </div>
       </div>
     </footer>
@@ -421,9 +421,9 @@
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-conteiner">
-              <input class="modal-form point-form" type="name" name="name" id="modal-name" placeholder="Имя и фамилия" required>
+              <input class="modal-form point-form" type="text" name="name" id="modal-name" placeholder="Имя и фамилия" required>
               <input class="modal-form point-form" type="email" name="email" id="modal-email" placeholder="email@example.com" required>
-              <textarea class="modal-form point-form" name="textarea" id="modal-textarea" rows="10" cols="" placeholder="В свободной форме" required></textarea>
+              <textarea class="modal-form point-form" name="textarea" id="modal-textarea" rows="10" cols="10" placeholder="В свободной форме" required></textarea>
             </div>
           </form>
           <button class="button button-pink button-modal" type="submit" value="Отправить">Отправить</button>

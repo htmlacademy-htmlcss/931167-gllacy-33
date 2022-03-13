@@ -57,7 +57,7 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -1366,8 +1366,11 @@ address {
   margin-right: 0;
 }
 
-.about-us-list {
+.different-info {
   position: relative;
+}
+
+.about-us-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1512,7 +1515,7 @@ address {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 textarea {
