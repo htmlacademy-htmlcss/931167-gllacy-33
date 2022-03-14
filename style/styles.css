@@ -702,6 +702,10 @@ body {
 .pagination-current-page-1 {
   background-color: #FCFCFC;
 }
+.pagination-current-page-2,
+.pagination-current-page-3 {
+  background-color: rgba(252, 252, 252, 0.3);
+}
 
 .gallery-footer.social-media-slider {
   margin: 0;
