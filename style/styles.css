@@ -103,26 +103,32 @@ body {
   align-items: center;
 }
 
-.navigation-list-main li:nth-child(1) {
+.navigation-list-catalog {
   width: 95px;
 }
 
-.navigation-list-main li:nth-child(2) {
+.navigation-list-delivery {
   width: 179px;
 }
 
-.navigation-list-main li:nth-child(3) {
+.navigation-list-company {
   width: 126px;
+}
+
+.sub-popover-new {
+  width: ;
 }
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
   max-height: 36px;
+  max-width: 550px;
 }
 
-.navigation-user li:nth-child(1) {
+.navigation-phone {
   width: 158px;
 }
 
@@ -297,7 +303,7 @@ body {
   list-style-type: none;
 }
 
-.sub-popover {
+.sub-popover-catalog .sub-popover {
   padding: 8px 16px;
   cursor: pointer;
 }
@@ -424,7 +430,8 @@ body {
   margin-right: auto;
 }
 
-.popover-close-button {
+.popover-close-button,
+.popover-close-busket {
   padding: 0;
   width: 16px;
   height: 16px;
@@ -434,7 +441,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  grid-area: exit;
   margin-left: auto;
 }
 
@@ -508,11 +514,13 @@ body {
   opacity: 0;
 }
 
-.popover-close-button:hover {
+.popover-close-button:hover,
+.popover-close-busket:hover {
   opacity: 100%;
 }
 
-.popover-close-button:focus {
+.popover-close-button:focus,
+.popover-close-busket:focus {
   opacity: 40%;
 }
 
@@ -871,6 +879,8 @@ body {
 .raspberry-jam-item {
   background-image: url("../images/gift/gift-1.png");
   background-color: #ff7799;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .marsh-mallow-item {
@@ -895,6 +905,7 @@ body {
   list-style-type: none;
   margin-top: 1px;
   margin-bottom: 15px;
+  max-width: 256px;
 }
 
 .offer-description {
@@ -1413,6 +1424,11 @@ body {
   display: block;
 }
 
+.tooltip-toggle:hover + .tooltip-address-text,
+.tooltip-toggle:focus + .tooltip-address-text {
+  display: block;
+}
+
 /* Address and contacts */
 .contacts {
   background-image: url("../images/background/address-background.jpg");
@@ -1482,6 +1498,7 @@ address {
 /* Footer */
 .footer {
   padding: 48px 14px 48px 4px;
+  border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 .footer-container {
@@ -1573,7 +1590,7 @@ address {
 .modal {
   position: relative;
   margin: auto;
-  background-color: #fcfcfc;
+  background-color: #FCFCFC;
   border-radius: 8px;
 }
 
@@ -1588,7 +1605,7 @@ address {
   right: 32px;
   width: 20px;
   height: 20px;
-  background-color: #fcfcfc;
+  background-color: #FCFCFC;
   border: none;
   background-image: url("../images/icon/cross.svg");
   background-repeat: no-repeat;
@@ -1618,7 +1635,7 @@ address {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  border: 1px solid #b9b9b9;
+  border: 1px solid #B9B9B9;
   border-radius: 4px;
   width: 408px;
 }
@@ -1629,7 +1646,7 @@ address {
 }
 
 .button-modal {
-  align-self: flex-end;
+  margin-left: 292px;
 }
 
 .modal-title {
@@ -1639,19 +1656,16 @@ address {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  color: #2d3440;
+  color: #2D3440;
 }
 
-.modal-container {
+.modal-conteiner {
   display: flex;
   flex-direction: column;
-}
-.modal-container input {
-  margin-bottom: 16px;
-}
-
-.auth-form {
   margin-bottom: 32px;
+}
+.modal-conteiner input {
+  margin-bottom: 16px;
 }
 
 .modal-container-close {

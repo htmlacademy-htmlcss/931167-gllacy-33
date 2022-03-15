@@ -15,18 +15,18 @@
         <h1 class="visually-hidden">Магазин мороженного Глэси Шоп.</h1>
       </a>
       <ul class="navigation-list navigation-list-main">
-        <li class="navigation-item">
+        <li class="navigation-item navigation-list-catalog">
           <a href="catalog.html" class="navigation-link navigation-link-item">Каталог</a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-item navigation-list-delivery">
           <a href="#" class="navigation-link navigation-link-item">Доставка и оплата</a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-item navigation-list-company">
           <a href="#" class="navigation-link navigation-link-item">О компании</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
+        <li class="navigation-item navigation-phone">
           <a href="tel:+78005558628" class="main-number">+7 800 555-86-28</a>
         </li>
         <li class="navigation-item navigation-search">
@@ -406,12 +406,12 @@
                 </span>
               </span>
               <input class="delivery-date point-form" type="text" name="delivery-date" id="delivery-date"
-                placeholder="01.04.2022">
+                placeholder="01.04.2020">
             </div>
             <div class="delivery-phone-container">
               <label class="delivery-label" for="delivery-phone">Телефон</label>
               <input class="delivery-phone point-form" type="tel" name="delivery-phone" id="delivery-phone"
-                placeholder="+7 800 900-00-00" required>
+                placeholder="+7 800 999-00-00" required>
             </div>
             <div class="delivery-address-container">
               <span class="form-lable">
@@ -516,21 +516,19 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть.</span>
+        <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Мы обязательно ответим вам!</h2>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="modal-container">
-            <input class="modal-form point-form" type="text" name="name" id="modal-name" placeholder="Имя и фамилия"
-              required>
-            <input class="modal-form point-form" type="email" name="email" id="modal-email"
-              placeholder="email@example.com" required>
-            <textarea class="modal-form point-form" name="textarea" id="modal-textarea" rows="10" cols="10"
-              placeholder="В свободной форме" required></textarea>
+          <div class="modal-conteiner">
+            <input class="modal-form point-form" type="text" name="name" id="modal-name" placeholder="Имя и фамилия" required>
+            <input class="modal-form point-form" type="email" name="email" id="modal-email" placeholder="email@example.com" required>
+            <textarea class="modal-form point-form" name="textarea" id="modal-textarea" rows="10" cols="10" placeholder="В свободной форме" required></textarea>
           </div>
+          <button class="button button-pink button-modal" type="submit" value="Отправить">Отправить</button>
         </form>
-        <button class="button button-pink button-modal" type="submit" value="Отправить">Отправить</button>
+
       </section>
     </div>
   </div>
