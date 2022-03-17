@@ -178,7 +178,7 @@ body {
 .navigation-icon-search {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2px;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -217,7 +217,7 @@ body {
 
 .navigation-link-login .navigation-icon-login {
   right: auto;
-  left: 18px;
+  left: 19px;
   margin: auto 0;
   z-index: 2;
   width: 15px;
@@ -1016,7 +1016,6 @@ body {
 .price-button {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   max-width: 190px;
 }
@@ -1030,6 +1029,16 @@ body {
   display: block;
 }
 
+.product-weight {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2d3440;
+  background-color: #ffffff;
+  display: block;
+  margin-left: 8px;
+}
+
 .add-basket {
   position: relative;
   width: 32px;
@@ -1037,6 +1046,7 @@ body {
   background-color: #ff2f64;
   border-radius: 50% 50%;
   text-align: center;
+  margin-left: auto;
 }
 
 .add-basket:hover,
@@ -1101,7 +1111,7 @@ body {
   line-height: 46px;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
   margin-top: 1px;
 }
 
@@ -1111,7 +1121,6 @@ body {
   grid-gap: 40px 30px;
   margin: 0;
   padding: 0;
-  margin-bottom: -1px;
 }
 
 .shop-advantages-item {
@@ -1649,7 +1658,7 @@ address {
 }
 
 .button-modal {
-  margin-left: 292px;
+  margin-left: 290px;
 }
 
 .modal-title {
@@ -1665,7 +1674,7 @@ address {
 .modal-conteiner {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 .modal-conteiner input {
   margin-bottom: 16px;
