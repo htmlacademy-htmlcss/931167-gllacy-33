@@ -1498,6 +1498,9 @@ address {
 /* Footer */
 .footer {
   padding: 48px 14px 48px 4px;
+}
+
+.footer-catalog {
   border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
 
@@ -1946,11 +1949,11 @@ textarea {
 }
 
 .control-mark-radio:hover,
-.control-mark-radio:focus {
+.control-input:focus + .control-mark-radio {
   border: 2px solid #fcfcfc;
 }
 
-.control-mark-radio:disabled {
+.control-input:disabled + .control-mark-radio {
   border: 2px solid rgba(45, 52, 64, 0.4);
 }
 
@@ -1964,7 +1967,7 @@ textarea {
   list-style-type: none;
 }
 
-.control-input[type="radio"]:checked + .control-mark-radio::before {
+.control-input:checked + .control-mark-radio::before {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -1975,12 +1978,12 @@ textarea {
   content: "";
 }
 
-.control-input[type="radio"]:hover + .control-mark-radio::before,
-.control-input[type="radio"]:focus + .control-mark-radio::before {
+.control-input:hover + .control-mark-radio::before,
+.control-input:focus + .control-mark-radio::before {
   background-color: #fcfcfc;
 }
 
-.control-input[type="radio"]:disabled + .control-mark-radio::before {
+.control-input:disabled + .control-mark-radio::before {
   background-color: rgba(45, 52, 64, 0.4);
 }
 
@@ -2043,11 +2046,11 @@ textarea {
 }
 
 .control-mark:hover,
-.control-mark:focus {
+.control-input:focus + .control-mark {
   background-image: url("../images/icon/check-off-white.svg");
 }
 
-.control-mark:disabled {
+.control-mark:disabled + .control-mark {
   background-image: url("../images/icon/check-off.svg");
   opacity: 0.4;
 }
@@ -2060,10 +2063,6 @@ textarea {
   height: 16px;
   background-image: url("../images/icon/check-on.svg");
   content: "";
-}
-
-.control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("../images/icon/check-on.svg");
 }
 
 .control-input[type="checkbox"]:checked:hover + .control-mark,
